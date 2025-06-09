@@ -1,0 +1,22 @@
+{
+  "ppltx_demo": {
+    "alerts": {
+      "daily_logs": {
+        "project": "ppltx-bi-developer",
+        "dataset_id": "logs",
+        "table_id": "daily_logs",
+        "file_name": "tables_monitoring.py",
+        "thresh_in_hours": 24,
+        "description": "Check that the table had been updated in the recent 24 hours"
+      },
+      "us_states": {
+       "project": "ppltx-bi-developer",
+        "dataset_id": "my_etl",
+        "table_id": "us_states_json",
+        "file_name": "tables_monitoring.py",
+        "thresh_in_hours": 24,
+        "description": "Check that the table had been updated in the recent 24 hours"
+      }
+    }
+  }
+}

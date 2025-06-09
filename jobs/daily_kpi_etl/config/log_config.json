@@ -1,0 +1,24 @@
+{
+  "ppltx_demo": {
+    "alerts": {
+      "ppltx_etl_daily": {
+        "message": "",
+        "enable_message": "--",
+        "step_name": "end",
+        "file_name": "my_etl_07.py",
+        "job_name": "exec",
+        "thresh_in_hours": 24,
+        "description": "Check that the job run in the recent 24 hours"
+      },
+      "ppltx_etl_hourly": {
+        "message": "",
+        "enable_message": "--",
+        "step_name": "end",
+        "file_name": "my_etl_07.py",
+        "job_name": "exec",
+        "thresh_in_hours": 3000,
+        "description": "Check that the job run in the recent 1 hours"
+      }
+    }
+  }
+}

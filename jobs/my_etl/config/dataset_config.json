@@ -1,0 +1,27 @@
+{
+  "logs": {
+    "tables": {
+      "daily_logs": 10
+    },
+    "exclude": [
+      "XX"
+    ]
+  },
+  "my_etl": {
+    "tables": {
+      "us_states_json": 600
+    },
+    "exclude": [
+      "us_states_csv",
+      "us_states_csv_20241211"
+    ]
+  },
+   "fp_scheduled_query": {
+    "tables": {
+      "daily_segment": 600
+    },
+    "exclude": [
+      "XX"
+    ]
+  }
+}
