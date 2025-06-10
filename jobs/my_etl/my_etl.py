@@ -186,12 +186,12 @@ for etl_name, etl_conf in etl_conf.items():
 
         # TODO(developer): Set table_id to the ID of the table to create.
         # table_id = "your-project.your_dataset.your_table_name"
-        table_id = f"{project_id}.{etl_conf['table_id']}_{ymd}"
+        table_id = f"{project_id}.{etl_conf['table_id']}"
 
         job_config = bigquery.LoadJobConfig(
             schema=client.schema_from_json( home / repo_name / repo_tail / f"config/{etl_conf['schema']}" ),
             # write_disposition="WRITE_TRUNCATE",
-            write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,
+            write_disposition=bigquery.WriteDisposition.WRITE_APPEND,
             # skip_leading_rows=1,
             # The source format defaults to CSV, so the line below is optional.
             source_format=etl_conf["source_format"]
