@@ -1,6 +1,6 @@
 {
   "screen_time_impact_on_mental_health": {
-    "producegitr": "abhishekdave9",
+    "producer": "abhishekdave9",
     "dataset_name": "digital-habits-vs-mental-health-dataset",
     "file_name" : "digital_habits_vs_mental_health.csv",
     "data_folder": "bi/jobs/kaggle",
@@ -13,6 +13,22 @@
     "file_name" : "Students Social Media Addiction.csv",
     "data_folder": "bi/jobs/kaggle",
     "table_id": "bi-course-461012.kaggle.students_social_media_addiction",
+    "isEnable" : true
+  },
+  "apple-stock-dataset": {
+    "producer": "hardikchhipa28",
+    "dataset_name": "apple-stock-dataset-from-2020-till-2025",
+    "file_name" : "apple_5yr_one.csv",
+    "data_folder": "bi/jobs/kaggle",
+    "table_id": "bi-course-461012.kaggle.apple-stock-dataset-from-2020-till-2025",
+    "isEnable" : true
+  },
+  "netflix-stock-data-2025": {
+    "producer": "umerhaddii",
+    "dataset_name": "netflix-stock-data-2025",
+    "file_name" : "NFLX_stocks.csv",
+    "data_folder": "bi/jobs/kaggle",
+    "table_id": "bi-course-461012.kaggle.netflix-stock-data-2025",
     "isEnable" : true
   },
   "us_states_csv": {
