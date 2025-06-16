@@ -1,0 +1,34 @@
+{
+  "screen_time_impact_on_mental_health": {
+    "producegitr": "abhishekdave9",
+    "dataset_name": "digital-habits-vs-mental-health-dataset",
+    "file_name" : "digital_habits_vs_mental_health.csv",
+    "data_folder": "bi/jobs/kaggle",
+    "table_id": "bi-course-461012.kaggle.digital-habits-vs-mental-health",
+    "isEnable" : true
+  },
+  "students_social_media_addiction": {
+    "producer": "adilshamim8",
+    "dataset_name": "social-media-addiction-vs-relationships",
+    "file_name" : "Students Social Media Addiction.csv",
+    "data_folder": "bi/jobs/kaggle",
+    "table_id": "bi-course-461012.kaggle.students_social_media_addiction",
+    "isEnable" : true
+  },
+  "us_states_csv": {
+    "url": "https://storage.googleapis.com/cloud-samples-data/bigquery/us-states/us-states.csv",
+    "data_file": "temp/data/bidev/jobs/my_etl_03/us-states.csv",
+    "data_folder": "temp/data/bidev/jobs/my_etl_03/",
+    "table_id": "ppltx-bi-developer.my_etl.us_states_csv",
+    "source_format" : "CSV",
+    "isEnable" : false
+  },
+  "us_states_json": {
+    "url": "https://storage.googleapis.com/cloud-samples-data/bigquery/us-states/us-states.json",
+    "data_file": "temp/data/bidev/jobs/my_etl_03/us-states.json",
+    "data_folder": "temp/data/bidev/jobs/my_etl_03/",
+    "table_id": "ppltx-bi-developer.my_etl.us_states_json",
+    "source_format" : "NEWLINE_DELIMITED_JSON",
+    "isEnable" : false
+  }
+}
