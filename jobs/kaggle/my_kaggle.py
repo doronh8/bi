@@ -125,7 +125,7 @@ etl_configuration = readJsonFile(home / repo_name / repo_tail / f"config/{etl_na
 # etl_conf = readJsonFile(home / "bi/jobs/kaggle/screen_time_impact_on_mental_health/config/etl_config.json")["screen_time_impact_on_mental_health"]
 
 for etl_name, etl_conf in etl_configuration.items():
-        if not etl_conf["isEnable"]:
+        if not etl_conf['isEnable']:
             continue
         print(f"{etl_name}\n{len(etl_name)*'='}\n")
 
@@ -134,7 +134,7 @@ for etl_name, etl_conf in etl_configuration.items():
 
         # ===== DELETE Logic =====
         if etl_action == "delete":
-            table_id = etl_conf["table_id"]
+            table_id = etl_conf['table_id']
             print(f"Deleting BigQuery table: {table_id}")
             client.delete_table(table_id, not_found_ok=True)
             print(f"Table {table_id} deleted.")
@@ -166,7 +166,7 @@ for etl_name, etl_conf in etl_configuration.items():
         api.authenticate()
 
         # Dataset identifier from Kaggle
-        dataset = f"{etl_conf["producer"]}/{etl_conf["dataset_name"]}"
+        dataset = f"{etl_conf['producer']}/{etl_conf['dataset_name']}"
         # dataset = "abhishekdave9/digital-habits-vs-mental-health-dataset"
 
         # Download and unzip the dataset into the target directory and handle non-successful response
