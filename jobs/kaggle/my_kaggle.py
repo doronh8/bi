@@ -23,7 +23,6 @@ from datetime import datetime, timedelta, date
 import uuid
 import platform
 import pandas as pd
-from matplotlib import pyplot as plt
 from kaggle.api.kaggle_api_extended import KaggleApi
 
 
