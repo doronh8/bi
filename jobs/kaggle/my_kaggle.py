@@ -155,9 +155,11 @@ for etl_name, etl_conf in etl_configuration.items():
 
         # Define target path
         target_path = os.path.expanduser(home / f"temp/data/{etl_conf["data_folder"]}")
+        print(target_path)
 
         # Make sure the target directory exists
-        os.makedirs(target_path, exist_ok=True)
+        # os.makedirs(target_path, exist_ok=True)
+        ensureDirectory(target_path)
 
         # Set up the API
         api = KaggleApi()
