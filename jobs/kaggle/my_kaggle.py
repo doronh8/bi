@@ -154,7 +154,7 @@ for etl_name, etl_conf in etl_configuration.items():
         # "abhishekdave9/digital-habits-vs-mental-health-dataset"
 
         # Define target path
-        target_path = os.path.expanduser(home / f"temp/data/{etl_conf["data_folder"]}")
+        target_path = os.path.expanduser(home / f"temp/data/{etl_conf['data_folder']}")
         print(target_path)
 
         # Make sure the target directory exists
@@ -188,7 +188,7 @@ for etl_name, etl_conf in etl_configuration.items():
 
         print("Transform")
 
-        data_file = f"{target_path}/{etl_conf["file_name"]}"
+        data_file = f"{target_path}/{etl_conf['file_name']}"
 
 
         # Clean column headers: replace spaces with underscores
@@ -212,7 +212,7 @@ for etl_name, etl_conf in etl_configuration.items():
 
         # TODO(developer): Set table_id to the ID of the table to create.
         # table_id = "your-project.your_dataset.your_table_name"
-        table_id = etl_conf["table_id"]
+        table_id = etl_conf['table_id']
 
 
         # Get previously loaded row count (basic example)
@@ -252,9 +252,9 @@ for etl_name, etl_conf in etl_configuration.items():
             msg = f"Loaded {table.num_rows} rows and {len(table.schema)} columns to {table_id}"
             print(msg)
             if not flags.dry_run:
-                log_dict["message"] = msg
+                log_dict['message'] = msg
                 set_log(log_dict, f"Load finished {etl_name}")
-                log_dict["message"] = str(x)
+                log_dict['message'] = str(x)
 
         if not flags.dry_run:
             set_log(log_dict, "end")
