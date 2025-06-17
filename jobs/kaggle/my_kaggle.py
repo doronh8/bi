@@ -112,7 +112,7 @@ def set_log(log_dict, step, log_table=log_table):
 
 ROW_LIMITS = {
     "init": 100,
-    "step": 200,
+    "step": 50,
     "daily": 20
 }
 
